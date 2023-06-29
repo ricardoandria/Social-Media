@@ -1,0 +1,92 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.wrapper {
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display: flex;
+    justify-content: center;
+    
+}
+.loginLeftSide {
+    width: 50%;
+    height: 100%;
+    
+}
+.loginLeftSide > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.loginRightSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+}
+.btn {
+    background-color: #001519;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.noAcc {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.noAcc > span {
+    color: #355E3B;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sm {
+    display: flex;
+    flex-direction: column;
+}
+.sm>h3 {
+    color: #355E3B;
+}
+.iconsSocialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.iconsm {
+    font-size: 25px;
+    cursor: pointer;
+}
+.errorMessage{
+    height: 70px;
+    width: 250px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    font-weight: 500;
+}
