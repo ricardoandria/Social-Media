@@ -165,7 +165,11 @@ const Signup = () => {
             </Button>
           </form>
           <div className={classes.noAcc}>
-            Vous avez deja un compte? <span>Se Connecter</span>
+            Vous avez deja un compte?{" "}
+            <span>
+              {" "}
+              <Link to="/"> Se Connecter</Link>
+            </span>
           </div>
           <div className={classes.sm}>
             <h3>ou inscrivez-vous avec votre compte de médias sociaux</h3>

@@ -3,16 +3,16 @@ import Post from "../models/Post.js";
 
 export const createPost = async (req,res) => {
     try {
-        const {userId,description, picturePath} = req.body;
-        const user = await User.findById(UserId);
-        const newPost = new postMessage({
+        const {userId,description, image} = req.body;
+        const user = await User.findById(userId);
+        const newPost = new Post({
             userId,
             firstName: user.firstName,
             lastName: user.lastName,
             location: user.location,
             description,
-            userPicturePath: user.picturePath,
-            picturePath,
+            userPicturePath: user.image,
+            image,
             likes:{},
             comments: [],
         })
@@ -41,7 +41,7 @@ export const getFeedPosts = async (req,res) => {
 
 export const getUserPosts = async (req,res) => {
     try {
-        const userId = req.params;
+        const {userId} = req.params;
 
         const posts = await Post.find({userId});
 

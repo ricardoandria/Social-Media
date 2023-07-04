@@ -15,7 +15,7 @@ import mongoose from "mongoose";
     },
     location: String,
     description: String,
-    picturePath: String,
+    image: String,
     userPicturePath: String,
     likes: {
         type: Map,
